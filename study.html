@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study-Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img class="logo" src="nexus-img-logo.png" alt="Nexus-life logo">
+            <h1>Nexus-life</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="study.html">Study-Hub</a>
+            <a href="about.html">About</a>
+            <a href="community.html">Community</a>
+            <a href="wellness.html">Wellness</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="study-hero">
+            <h2>Study Hub</h2>
+            <p>Organise your assignments, stay productive,
+                and achieve your academic goals.
+            </p>
+        </section>
+        <section class="planner">
+        
+            <h2>Assignment Planner</h2>
+            <label for="Assignment-name">Assignment Name</label>
+            <input type="text" id="Assignment-name"placeholder="assignment name">
+            <label for="due-date">Due Date</label>
+            <input type="date" id="due-date">
+            <button class="button" id="add-btn" type="submit">Add assignment</button>
+            
+            <ul id="assignment-list">
+                
+            </ul>
+        </section>
+        <section class="todo">
+            <h2>Study Tasks</h2>
+            <label for="task">Add Task</label>
+            <input type="text" id="task" placeholder="Add task">
+            <button class="button" id="one-btn">Add task</button>
+            <ul id="task-list">
+        
+            </ul>
+
+        </section>
+        <section class="timer">
+            <h2>Pomodoro Timer</h2>
+            <h3 id="timer">30:00</h3>
+            <div class="button-group">
+            <button class="button" id="start-btn">Start</button>
+            <button class="button" id="end-btn">End</button>
+            <button class="button" id="reset-btn">Reset</button>
+            </div>
+        </section>
+        <section class="resources">
+            <h2>Study Resources</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Lecture Notes</h3>
+                    <p>Access lecture materials</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Video Tutorials</h3>
+                    <p>Learn through video lessons</p>
+                </div>
+                <div class="resource-card">
+                    <h3>Practice Questions</h3>
+                    <p>Improve your knowledge</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="para">Nexus-life</p>
+        <p class="para">Your digital student companion</p>
+        <img id="imgs" src="nexus-img-logo.png" alt="nexus-img-logo">
+        <ul id="names">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="wellness.html">Wellness</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p id="foot"> Copyright &copy; 2026 Nexus-life. All rights reserved. </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

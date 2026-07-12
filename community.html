@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <main id="app">
+    <header>
+        <div class="brand">
+            <img class="logo" src="nexus-img-logo.png" alt="Nexus-life logo">
+            <h1>Nexus-life</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="study.html">Study-Hub</a>
+            <a href="about.html">About</a>
+            <a href="community.html">Community</a>
+            <a href="wellness.html">Wellness</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="community-hero">
+        <h2>Community Forum</h2>
+        <p>Share feedback, ask questions, and connect with your friends.</p>
+    </section>
+    <section class="forum">
+        <h2>Leave a comment</h2>
+        <input type="text" placeholder="Your name" v-model="name">
+        <input type="text" placeholder="Topic" v-model="topic">
+        <textarea placeholder="write your comment..." v-model="comment"></textarea>
+        <button @click="addComment">Submit</button>
+    </section>
+
+    <section class="comments">
+        <h2>Recent comments</h2>
+        <div class="comment-card" v-for="(post,index) in comments" :key="index">
+            <h3>{{ post.topic }}</h3>
+            <p><strong>{{ post.name }}</strong></p>
+            <p>{{ post.comment }}</p>
+            <button @click="deleteComment(index)">Delete</button>
+        </div>
+    </section>
+
+    <footer>
+        <p class="para">Nexus-life</p>
+        <p class="para">Your digital student companion</p>
+        <img id="imgs" src="nexus-img-logo.png" alt="nexus-img-logo">
+        <ul id="names">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="study.html">Study-Hub</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="wellness.html">Wellness</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p id="foot"> Copyright &copy; 2026 Nexus-life. All rights reserved. </p>
+    </footer>
+    </main> 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="community.js"></script>
+    
+</body>
+</html>
