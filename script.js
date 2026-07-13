@@ -65,6 +65,11 @@ function updateTimerDisplay() {
     let mins = Math.floor(timeleft / 60);
     let secs = timeleft % 60;
     timerDisplay.textContent = `${mins}:${secs < 10 ? '0' : ""}${secs}`;
+    if (timeleft <= 0) {
+        clearInterval(timerBreak);
+        alert("Time's up! Take a break.");
+        return;
+    }
     timeleft--;
 }
 startButton.addEventListener("click", function() {

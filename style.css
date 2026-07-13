@@ -158,6 +158,10 @@ footer{
     text-align: center;
 }
 
+
+
+
+
 .study-hero{
     display: flex;
     flex-direction: column;
@@ -257,6 +261,11 @@ button{
     background-color: #c0392b;
     transform: scale(1.05);
 }
+
+
+
+
+
 .about-hero{
      display: flex;
     flex-direction: column;
@@ -334,4 +343,178 @@ button{
     width: 600px;
     border-radius: 15px;
     margin-left: 40px;
+}
+
+
+
+
+
+.community-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 50px;
+    background: linear-gradient(rgba(11, 16, 38, 0.8), rgba(11, 16, 38, 0.7));
+}
+.community-hero h2{
+    font-size: 50px;
+}
+.community-hero p{
+    font-size: 20px;
+    margin: 15px 0;
+    max-width: 600px;
+    line-height: 1.7;
+}
+.forum{
+    padding: 40px 50px;
+    background: linear-gradient(rgba(11, 16, 38, 0.8), rgba(11, 16, 38, 0.4));
+}
+.forum.h2{
+    font-size: 50px;
+}
+.forum input, .forum textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: 600px;
+}
+.forum button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4da6ff;
+    color: white;
+    cursor: pointer;
+}
+.comments{
+    padding: 40px 50px;
+    background: linear-gradient(rgba(11, 16, 38, 0.8), rgba(11, 16, 38, 0.4));
+}
+.comments h2{
+    font-size: 50px;
+}
+
+
+
+
+.wellness-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 50px;
+    background: linear-gradient(rgba(11, 16, 38, 0.7), rgba(11, 16, 38, 0.5));
+}
+.wellness-hero h2{
+    font-size: 50px;
+}
+.wellness-hero p{
+    font-size: 20px;
+    margin: 15px 0;
+    max-width: 600px;
+    line-height: 1.7;
+}
+.mood-check{
+    padding: 40px 50px;
+    background: linear-gradient(rgba(11, 16, 38, 0.8), rgba(11, 16, 38, 0.4));
+}
+.mood-check h2{
+    font-size: 50px;
+}
+.mood-check p{
+    font-size: 20px;
+    margin: 15px 0;
+    max-width: 600px;
+    line-height: 1.7;
+}
+.mood-btn{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.md-button{
+    width: 150px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #4da6ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease,
+                background-color 0.3s ease;
+}
+.md-button:hover{
+    transform: scale(1.05);
+}
+.wellness-tips h2, .breathing h2{
+    font-size: 50px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tips{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+.tip-card{
+    padding: 15px 20px;
+    border: 2px solid #3f5cb3;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.tip-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(77, 166, 255, .4);
+}
+.tip-card h3{
+    font-size: 30px;
+    padding: 10px
+}
+.tip-card p{
+    font-size: 20px;
+    padding:5px;
+}
+.breathing p{
+    font-size: 20px;
+    margin: 15px 0;
+    max-width: 600px;
+    line-height: 1.7;
+}
+.breathing-box{
+    padding: 40px 50px;
+    background: linear-gradient(rgba(11, 16, 38, 0.8), rgba(11, 16, 38, 0.4));
+}
+.breathing-box p{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.motivation h2{
+    font-size: 50px;
+}
+.motivation p{
+    font-size: 20px;
+    margin: 15px 0;
+    max-width: 600px;
+    line-height: 1.7;
+}
+.habits{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 50px;
+    background: linear-gradient(rgba(11, 16, 38, 0.8), rgba(11, 16, 38, 0.4));
+}
+.habits h2{
+    font-size: 50px;
+}
+.hb{
+    font-size: 20px;
+    padding: 20px;
+    line-height: 2;
+    margin: 15px;
 }
