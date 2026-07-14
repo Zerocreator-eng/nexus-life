@@ -83,3 +83,20 @@ resetButton.addEventListener("click", function(){
     timeleft = 30 * 60;
     timerDisplay.textContent = "30:00";
 });
+const themeButton = document.getElementById("theme-btn");
+
+themeButton.addEventListener("click", function(){
+
+    document.body.classList.toggle("light-mode");
+
+    if(document.body.classList.contains("light-mode")){
+
+        themeButton.textContent = "🌙 Dark Mode";
+
+    }else{
+
+        themeButton.textContent = "☀️ Light Mode";
+
+    }
+
+});
